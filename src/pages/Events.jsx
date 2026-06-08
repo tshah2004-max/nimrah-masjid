@@ -6,6 +6,7 @@ function Events() {
       <p className="text-gray-600">Daily Madrassa Class</p>
       <p className="text-gray-600">Monday - Friday, 5:00pm - 7:00pm</p>
       <p className="text-gray-600">Quraan classes for children</p>
+       <img src="/event.png" className="w-full rounded-lg mt-4" alt="Event" />
       </div>
     </div>
   )
