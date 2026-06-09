@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Carousel from '../components/Carousel'
 
 function Home() {
   return (
@@ -7,10 +8,7 @@ function Home() {
         <h1 className="text-4xl font-bold">Welcome to Nimrah Education and Community Center</h1>
         <p className="text-xl text-gray-600 mt-4">Nimrah Education & Communication Centre is dedicated to nurturing faith, knowledge, and community. We strive to provide a welcoming environment where individuals and families can strengthen their connection with Allah, deepen their understanding of Islam, and participate in meaningful community activities.</p>
       </div>
-      <div 
-  style={{ backgroundImage: "url('/mosque.png')" }}
-  className="bg-cover bg-center text-center py-40 h-96"
-></div>
+      <div><Carousel/></div>
       <div className="max-w-2xl mx-auto mt-10 p-6">
         <h1 className="text-3xl font-bold mb-6">Our Services</h1>
         <p className="mb-4 text-gray-700">Five Daily Prayers conducted in congregation.
