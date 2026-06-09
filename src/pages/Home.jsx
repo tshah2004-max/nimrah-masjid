@@ -4,7 +4,7 @@ import Carousel from '../components/Carousel'
 function Home() {
   return (
     <div>
-      <div className="text-center py-20 bg-green-50">
+      <div className="text-center py-20">
         <h1 className="text-4xl font-bold">Welcome to Nimrah Education and Community Center</h1>
         <p className="text-xl text-gray-600 mt-4">Nimrah Education & Communication Centre is dedicated to nurturing faith, knowledge, and community. We strive to provide a welcoming environment where individuals and families can strengthen their connection with Allah, deepen their understanding of Islam, and participate in meaningful community activities.</p>
       </div>

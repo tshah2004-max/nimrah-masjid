@@ -22,13 +22,13 @@ function Carousel() {
   }, [])
 
   return (
-    <div className="w-full h-96 overflow-hidden relative">
-      <img
-        src={images[current]}
-        alt="Nimrah Masjid"
-        className="w-full h-full object-contain transition-all duration-500"
-      />
-    </div>
+    <div className="w-full max-w-3xl mx-auto px-4 h-80 overflow-hidden relative">
+  <img
+    src={images[current]}
+    alt="Nimrah Masjid"
+    className="w-full h-full object-cover object-center transition-all duration-500"
+  />
+</div>
   )
 }
 
