@@ -14,11 +14,11 @@ function Home() {
         <div className="relative h-full flex items-center justify-center px-4 text-center">
           <div className="max-w-3xl">
             <h1 className="text-white text-4xl font-bold">
-              Welcome to Nimrah Education and Community Center
+              Welcome to Nimrah Masjid and Education Center
             </h1>
 
             <p className="text-white/90 text-lg mt-4 leading-relaxed">
-              Nimrah Education & Communication Centre is dedicated to nurturing faith,
+              Nimrah Masjid & Education Centre is dedicated to nurturing faith,
               knowledge, and community.
             </p>
           </div>
@@ -50,7 +50,7 @@ function Home() {
 
           <p>
             Whether you are seeking knowledge, spiritual development, or a sense of community,
-            Nimrah Education & Communication Centre welcomes you.
+            Nimrah Masjid & Education Centre welcomes you.
           </p>
 
           <p>
@@ -58,7 +58,7 @@ function Home() {
           </p>
         </div>
       </div>
-
+      Imaams:
     </div>
   )
 }
