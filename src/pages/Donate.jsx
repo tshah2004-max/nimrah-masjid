@@ -5,6 +5,7 @@ function Donate() {
       <h2 className="text-xl font-semibold mb-4 text-green-800">Donate to Support Your Masjid and Community</h2>
       <p className="text-gray-700 mb-4">Nimrah Education & Community Centre serves as a place of worship, learning, and community support for people of all ages. Through your generosity, we are able to maintain our facilities, provide educational programmes, and continue serving the local community.</p>
       <p className="text-gray-700 mb-6">Every contribution, no matter the amount, helps us fulfil our mission and sustain the services that benefit worshippers and families throughout the year.</p>
+      <p className="text-gray-700 mb-6">In-person card donations can be made using existing Square and SumUp terminals.</p>
 
       <h2 className="text-xl font-semibold mb-3">Your Donations Help Fund</h2>
       <ul className="list-disc list-inside text-gray-700 mb-6 space-y-1">
