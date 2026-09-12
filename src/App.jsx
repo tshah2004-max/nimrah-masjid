@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import QuranSchool from './pages/QuranSchool'
 import Comittee from './pages/Comittee'
 import Volunteer from './pages/Volunteer'
+import Footer from './components/Footer'
 
 function App() {
     return (
@@ -20,9 +21,10 @@ function App() {
   <Route path="/donate" element={<Donate />} />
   <Route path="/contact" element={<Contact />} />
   <Route path="/quran-school" element={<QuranSchool />} />
-<Route path="/committee" element={<Comittee />} />
+<Route path="/comittee" element={<Comittee />} />
 <Route path="/volunteer" element={<Volunteer />} />
 </Routes>
+<Footer />
     </BrowserRouter>
     )
 }

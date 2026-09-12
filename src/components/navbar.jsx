@@ -8,7 +8,7 @@ return <nav className="bg-green-800 p-4 text-white flex justify-between items-ce
         <li><Link className="hover:text-green-300 transition-colors duration-200" to="/events">Events</Link></li>
         <li><Link className="hover:text-green-300 transition-colors duration-200" to="/donate">Donate</Link></li>
         <li><Link className="hover:text-green-300 transition-colors duration-200" to="/contact">Contact</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/quraan-School">Quraan School</Link></li>
+        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/quran-school">Quran School</Link></li>
         <li><Link className="hover:text-green-300 transition-colors duration-200" to="/comittee">Comittee</Link></li>
         <li><Link className="hover:text-green-300 transition-colors duration-200" to="/volunteer">Volunteer</Link></li>
     </ul>
