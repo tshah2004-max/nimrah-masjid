@@ -1,3 +1,4 @@
+import PrayerBar from './components/PrayerBar'
 import Navbar from './components/Navbar'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
@@ -10,9 +11,11 @@ import Comittee from './pages/Comittee'
 import Volunteer from './pages/Volunteer'
 import Footer from './components/Footer'
 
+
 function App() {
     return (
         <BrowserRouter>
+        <PrayerBar />
       <Navbar />
       <Routes>
   <Route path="/" element={<Home />} />

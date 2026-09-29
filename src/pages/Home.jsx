@@ -1,4 +1,3 @@
-import Carousel from '../components/Carousel'
 
 function Home() {
   return (
@@ -23,11 +22,6 @@ function Home() {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* CAROUSEL (full width media section) */}
-      <div className="mt-10">
-        <Carousel />
       </div>
 
       {/* SERVICES (contained content section — but FIXED TEXT STRUCTURE) */}
@@ -58,7 +52,6 @@ function Home() {
           </p>
         </div>
       </div>
-      Imaams:
     </div>
   )
 }
