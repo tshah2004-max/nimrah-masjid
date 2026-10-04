@@ -1,36 +1,42 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+
+const LINKS = [
+  { to: "/", label: "Home" },
+  { to: "/prayer-times", label: "Prayer Times" },
+  { to: "/events", label: "Events" },
+  { to: "/donate", label: "Donate" },
+  { to: "/contact", label: "Contact" },
+];
 
 function Footer() {
   return (
-    <footer className="bg-green-800 text-white mt-20 p-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-3 gap-10">
-        
-        <div>
-          <h3 className="font-bold text-lg mb-3">🕌 Nimrah Education & Community Centre</h3>
-          <p className="text-green-200">Serving the community of Levenshulme, Manchester.</p>
+    <footer className="bg-green-950 text-white mt-20">
+      <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        {/* Brand */}
+        <div className="max-w-xs">
+          <h3 className="font-semibold text-lg">Nimrah Education & Community Centre</h3>
+          <p className="text-green-300 text-sm mt-2">
+            Serving the community of Levenshulme, Manchester.
+          </p>
         </div>
 
-        <div>
-          <h3 className="font-bold text-lg mb-3">Quick Links</h3>
-          <ul className="space-y-2">
-            <li><Link to="/" className="text-green-200 hover:text-white">Home</Link></li>
-            <li><Link to="/prayer-times" className="text-green-200 hover:text-white">Prayer Times</Link></li>
-            <li><Link to="/events" className="text-green-200 hover:text-white">Events</Link></li>
-            <li><Link to="/donate" className="text-green-200 hover:text-white">Donate</Link></li>
-            <li><Link to="/contact" className="text-green-200 hover:text-white">Contact</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="font-bold text-lg mb-3">Contact</h3>
-          <p className="text-green-200">2 Park Grove, Levenshulme</p>
-          <p className="text-green-200">Manchester M19 3AQ</p>
-          <p className="text-green-200 mt-2">07307 535874</p>
-        </div>
-
+        {/* Links */}
+        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          {LINKS.map(({ to, label }) => (
+            <Link key={to} to={to} className="text-green-300 hover:text-white transition-colors">
+              {label}
+            </Link>
+          ))}
+        </nav>
       </div>
-      <p className="text-center text-green-300 mt-10 text-sm">© 2026 Nimrah Education & Community Centre. All rights reserved.</p>
+
+      <div className="border-t border-green-900">
+        <p className="max-w-5xl mx-auto px-6 py-4 text-center text-green-400 text-xs">
+          © 2026 Nimrah Education & Community Centre. All rights reserved.
+        </p>
+      </div>
     </footer>
-  )
+  );
 }
-export default Footer
+
+export default Footer;
