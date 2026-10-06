@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img"><title>Nimrah icon</title><rect width="512" height="512" rx="104" fill="#102A43"/><g transform="translate(-412 420) scale(0.62)"><rect x="845" y="-105" width="470" height="105" fill="#FFFFFF"/><path fill-rule="evenodd" fill="#F2A900" d="M930 -105Q930 -335 1075 -335 1220 -335 1220 -105ZM990 -105Q990 -255 1075 -255 1160 -255 1160 -105Z"/>
+<line x1="1075" y1="-335" x2="1075" y2="-410" stroke="#F2A900" stroke-width="10"/>
+<mask id="cres2"><rect x="1000" y="-500" width="150" height="120" fill="#fff"/><circle cx="1091" cy="-455" r="26" fill="#000"/></mask>
+<circle cx="1075" cy="-445" r="30" fill="#2EC4BD" mask="url(#cres2)"/>
+<rect x="850" y="-380" width="36" height="275" fill="#2EC4BD"/><path d="M842 -380L868 -450 894 -380Z" fill="#2EC4BD"/>
+<line x1="868" y1="-450" x2="868" y2="-490" stroke="#F2A900" stroke-width="8"/></g></svg>

@@ -1,18 +1,43 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+
+const LINKS = [
+  { to: "/", label: "Home" },
+  { to: "/prayer-times", label: "Prayer Times" },
+  { to: "/events", label: "Events" },
+  { to: "/donate", label: "Donate" },
+  { to: "/contact", label: "Contact" },
+  { to: "/quran-school", label: "Quran School" },
+  { to: "/comittee", label: "Committee" },
+  { to: "/volunteer", label: "Volunteer" },
+];
 
 function Navbar() {
-return <nav className="bg-green-800 p-4 text-white flex justify-between items-center">
-    <ul className="flex gap-6">
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/">Home</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/prayer-times">Prayer Times</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/events">Events</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/donate">Donate</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/contact">Contact</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/quran-school">Quran School</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/comittee">Committee</Link></li>
-        <li><Link className="hover:text-green-300 transition-colors duration-200" to="/volunteer">Volunteer</Link></li>
-    </ul>
-</nav>
+  return (
+    <nav className="bg-green-800 text-white px-6 py-3 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3">
+      {/* Logo */}
+      <Link to="/" className="flex items-center gap-3 self-center lg:self-auto">
+        <img
+          src="/nimrah-logo-horizontal.png"
+          alt="Nimrah Education & Community Centre logo"
+          className="h-16 w-auto"
+        />
+      </Link>
+
+      {/* Links */}
+      <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        {LINKS.map(({ to, label }) => (
+          <li key={to}>
+            <Link
+              className="hover:text-green-300 transition-colors duration-200"
+              to={to}
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar; 
+export default Navbar;
