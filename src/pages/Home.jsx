@@ -34,11 +34,11 @@ function Home() {
                 Prayer Times
               </Link>
               <Link
-                to="/events"
-                className="bg-white/90 hover:bg-white text-green-900 px-6 py-3 rounded-lg font-semibold"
+              to="/donate"
+              className="bg-white/90 hover:bg-white text-green-900 px-6 py-3 rounded-lg font-semibold"
               >
-                Events & Classes
-              </Link>
+                Donate 
+                </Link>
             </div>
           </div>
         </div>

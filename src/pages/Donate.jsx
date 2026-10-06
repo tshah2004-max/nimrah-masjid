@@ -47,16 +47,21 @@ function Donate() {
         <div className="w-16 h-1 bg-green-700 mx-auto rounded mb-8"></div>
 
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="bg-white rounded-xl shadow p-5 border-t-4 border-green-700 relative">
-            <span className="absolute top-3 right-3 bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">
-              Coming soon
-            </span>
-            <div className="text-3xl mb-2">💻</div>
-            <h3 className="font-semibold text-gray-800 mb-1">Online Donations</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Online donations are coming soon, in shaa Allah. Please check back shortly.
-            </p>
-          </div>
+          <div className="bg-white rounded-xl shadow p-5 border-t-4 border-green-700 flex flex-col">
+  <div className="text-3xl mb-2">💻</div>
+  <h3 className="font-semibold text-gray-800 mb-1">Online Donations</h3>
+  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+    Donate securely online by card using our SumUp payment page.
+  </p>
+  <a
+    href="https://pay.sumup.com/b2c/QF5B9XR4"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-auto inline-block text-center bg-green-700 hover:bg-green-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors"
+  >
+    Donate Online
+  </a>
+</div>
 
           <div className="bg-white rounded-xl shadow p-5 border-t-4 border-green-700">
             <div className="text-3xl mb-2">💳</div>
