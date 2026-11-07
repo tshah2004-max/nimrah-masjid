@@ -36,9 +36,9 @@ function PrayerBar() {
         <div className="flex gap-6">
         {PRAYERS.map(({ name, adhan, iqama }) => (
           <span key={name}>
-             {name}:{" "}
-            <strong>{jamaatTime(adhanToday[adhan], iqamaToday[iqama])}</strong>
-          </span>
+  <strong>{name}:</strong>{" "}
+  {jamaatTime(adhanToday[adhan], iqamaToday[iqama])}
+</span>
         ))}
       </div>
     </div>
